@@ -81,13 +81,14 @@ class minHeap {
             this.swap(i,smallest)
             this.heapify(smallest)
         }
-        
     }
 
     print() {
         for(var i = 0; i < this.pointers.length; i++)
             console.log((this.pointers[i]).key);
     }
+
+    getSize() { return this.pointers.length; }
 }
 
 
